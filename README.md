@@ -1,21 +1,39 @@
-# SerumThemeEssence
+# Essence
 
-**TODO: Add description**
+**Essence** is a Serum theme which presents a minimal and clean look.
+
+This theme was extracted from [the official Serum
+website](https://dalgona.github.io/Serum), and extended for general use.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `serum_theme_essence` to your list of dependencies in `mix.exs`:
+Add the theme package to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:serum_theme_essence, "~> 0.1.0"}
+    {:serum, "~> 1.1"},
+    {:serum_theme_essence, "~> 1.0"},
+    # ...
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/serum_theme_essence](https://hexdocs.pm/serum_theme_essence).
+Run `mix` to fetch and build the theme package:
 
+```shell
+$ mix do deps.get, deps.compile
+```
+
+Configure your `serum.exs` to use `Serum.Themes.Essence` theme module:
+
+```elixir
+%{
+  theme: Serum.Themes.Essence,
+  # ...
+}
+```
+
+## License
+
+MIT. See `LICENSE` for the full text.
