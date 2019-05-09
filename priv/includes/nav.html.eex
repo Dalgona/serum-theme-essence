@@ -1,3 +1,17 @@
+<%= """
+<!--=========================================================-->
+<!-- Override "includes/nav.html.eex"                        -->
+<!-- to customize the navigation area.                       -->
+<!--                                                         -->
+<!-- Example:                                                -->
+<!-- <ul>                                                    -->
+<!--   <\x25= for p <- @all_pages, p.group == "main-menu" do \x25> -->
+<!--     <li><a href="<\x25= p.url \x25>"><\x25= p.label \x25></a></li>  -->
+<!--   <\x25 end \x25>                                             -->
+<!--   <li><a href="<\x25= base "posts" \x25>">Posts</a></li>      -->
+<!-- </ul>                                                   -->
+<!--=========================================================-->
+""" %>
 <ul>
   <%= for p <- @all_pages, p.group == "main-menu" do %>
     <li><a href="<%= p.url %>"><%= p.label %></a></li>
