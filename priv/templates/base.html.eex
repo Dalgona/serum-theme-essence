@@ -6,6 +6,7 @@
     <title><%= @page.title %> - <%= @site.name %></title>
     <link rel="stylesheet" href="<%= asset "css/style.css" %>">
     <link rel="stylesheet" href="<%= asset "css/prism.css" %>">
+    <%= include "head-extras" %>
   </head>
   <body>
     <div id="wrapper">
