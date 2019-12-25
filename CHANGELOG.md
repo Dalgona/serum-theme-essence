@@ -1,5 +1,12 @@
 # Essence Changelog
 
+## v1.0.2 &mdash; 2019-12-25
+
+### Improved
+
+- You can now customize the topmost banner area by overriding
+  `includes/banner.html.eex`.
+
 ## v1.0.1 &mdash; 2019-08-06
 
 ### Added

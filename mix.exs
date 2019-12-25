@@ -4,7 +4,7 @@ defmodule Serum.Themes.Essence.MixProject do
   def project do
     [
       app: :serum_theme_essence,
-      version: "1.0.1",
+      version: "1.0.2",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -31,8 +31,7 @@ defmodule Serum.Themes.Essence.MixProject do
       maintainers: ["Eunbin Jeong"],
       licenses: ["MIT"],
       links: %{
-        "GitHub" => "https://github.com/Dalgona/serum-theme-essence",
-        "Website" => "https://dalgona.github.io/serum-theme-essence"
+        "GitHub" => "https://github.com/Dalgona/serum-theme-essence"
       }
     ]
   end
