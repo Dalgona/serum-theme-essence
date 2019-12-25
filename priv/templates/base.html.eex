@@ -10,10 +10,7 @@
   </head>
   <body>
     <div id="wrapper">
-      <header id="top">
-        <h1><a href="<%= base() %>"><%= @site.name %></a></h1>
-        <p><%= @site.description %></p>
-      </header>
+      <header id="top"><%= include "banner" %></header>
       <nav><%= include "nav" %></nav>
       <hr>
       <main><%= @contents %></main>
