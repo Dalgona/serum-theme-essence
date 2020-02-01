@@ -4,7 +4,7 @@ defmodule Serum.Themes.Essence.MixProject do
   def project do
     [
       app: :serum_theme_essence,
-      version: "1.0.2",
+      version: "1.1.0",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
