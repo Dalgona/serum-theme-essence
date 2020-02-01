@@ -18,7 +18,7 @@
               </span>
             <% end %>
           </p>
-          <p class="preview"><%= x.preview %></p>
+          <p class="post-preview"><%= x.preview %></p>
         </li>
       <% end %>
     </ul>
