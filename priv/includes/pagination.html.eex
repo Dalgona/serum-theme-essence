@@ -1,0 +1,25 @@
+<%
+alias Serum.Themes.Essence.Pagination, as: P
+
+current = @page.current_page
+last = @page.max_page
+list_dir = if @page.tag, do: @page.tag.list_url, else: base("posts")
+{prev, next} = P.get_page_nums(current, last, 2)
+%>
+<ul class="pagination">
+  <%= if not(current == 1 or 1 in prev) do %>
+    <li><a class="page-button" href="<%= P.page_link(list_dir, 1) %>">1</a></li>
+    <li><span class="ellipsis"></span></li>
+  <% end %>
+  <%= for x <- prev do %>
+    <li><a class="page-button" href="<%= P.page_link(list_dir, x) %>"><%= x %></a></li>
+  <% end %>
+  <li><span class="page-button current"><%= current %></span></li>
+  <%= for x <- next do %>
+    <li><a class="page-button" href="<%= P.page_link(list_dir, x) %>"><%= x %></a></li>
+  <% end %>
+  <%= if not(current == last or last in next) do %>
+    <li><span class="ellipsis"></span></li>
+    <li><a class="page-button" href="<%= P.page_link(list_dir, last) %>"><%= last %></a></li>
+  <% end %>
+</ul>

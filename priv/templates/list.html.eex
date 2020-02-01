@@ -23,13 +23,5 @@
       <% end %>
     </ul>
   </div>
-  <p class="pagination">
-    Showing Page <%= @page.current_page %> of <%= @page.max_page %>.
-    <%= if @page.prev_url do %>
-      <a href="<%= @page.prev_url %>">[Prev]</a>
-    <% end %>
-    <%= if @page.next_url do %>
-      <a href="<%= @page.next_url %>">[Next]</a>
-    <% end %>
-  </p>
+  <%= include "pagination" %>
 </article>
